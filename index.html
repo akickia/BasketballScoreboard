@@ -32,20 +32,20 @@
         </section>
       </section>
 
-      <button class="resetBtn">RESET SCORE</button>
-      
-      <section class="resultContainer">
-          <h3>lastest result:</h3>
-          <div class="flex">
+      <button class="resetBtn" onclick="resetScore()">RESET SCORE</button>
+      <h2 class="latest">Previous result:</h2>
+     
+          
+          <div class="scoreContainer resultContainer" id="home">
             <p>Home:</p>
-            <p class="resultHome">2</p>
+            <p class="result resultHome"></p>
           </div>
-          <div class="flex">
+          <div class="scoreContainer resultContainer" id="guest">
             <p>Guest:</p>
-            <p class="resultGuest"></p>
+            <p class="result resultGuest"></p>
           </div>
         </div>
-      </section>
+      
     </article>
     <script src="index.js"></script>
   </body>
