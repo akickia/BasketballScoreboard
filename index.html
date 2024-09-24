@@ -14,9 +14,24 @@
           <h1 class="score scoreHome">0</h1>
         </section>
         <section class="btnContainer">
-          <button onclick="addScore('home', 1)">+1</button>
-          <button onclick="addScore('home', 2)">+2</button>
-          <button onclick="addScore('home', 3)">+3</button>
+          <button
+            onclick="addScore('home', 1)"
+            aria-label="Add 1 point to Home"
+          >
+            +1
+          </button>
+          <button
+            onclick="addScore('home', 2)"
+            aria-label="Add 2 point to Home"
+          >
+            +2
+          </button>
+          <button
+            onclick="addScore('home', 3)"
+            aria-label="Add 3 point to Home"
+          >
+            +3
+          </button>
         </section>
       </section>
 
@@ -26,26 +41,37 @@
           <h1 class="score scoreGuest">0</h1>
         </section>
         <section class="btnContainer">
-          <button onclick="addScore('guest', 1)">+1</button>
-          <button onclick="addScore('guest', 2)">+2</button>
-          <button onclick="addScore('guest', 3)">+3</button>
+          <button
+            onclick="addScore('guest', 1)"
+            aria-label="Add 1 point to Guest"
+          >
+            +1
+          </button>
+          <button
+            onclick="addScore('guest', 2)"
+            aria-label="Add 2 point to Guest"
+          >
+            +2
+          </button>
+          <button
+            onclick="addScore('guest', 3)"
+            aria-label="Add 3 point to Guest"
+          >
+            +3
+          </button>
         </section>
       </section>
 
       <button class="resetBtn" onclick="resetScore()">RESET SCORE</button>
       <h2 class="latest">Previous result:</h2>
-     
-          
-          <div class="scoreContainer resultContainer" id="home">
-            <p>Home:</p>
-            <p class="result resultHome"></p>
-          </div>
-          <div class="scoreContainer resultContainer" id="guest">
-            <p>Guest:</p>
-            <p class="result resultGuest"></p>
-          </div>
-        </div>
-      
+      <div class="scoreContainer resultContainer" id="home">
+        <p>Home:</p>
+        <p class="result resultHome"></p>
+      </div>
+      <div class="scoreContainer resultContainer" id="guest">
+        <p>Guest:</p>
+        <p class="result resultGuest"></p>
+      </div>
     </article>
     <script src="index.js"></script>
   </body>

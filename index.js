@@ -2,6 +2,8 @@ const homeScoreEl = document.querySelector('.scoreHome');
 const guestScoreEl = document.querySelector('.scoreGuest');
 const lastResultHome = document.querySelector('.resultHome');
 const lastResultGuest = document.querySelector('.resultGuest');
+const homeEl = document.getElementById('home');
+const guestEl = document.getElementById('guest');
 let homeScore = 0;
 let guestScore = 0;
 
@@ -16,8 +18,10 @@ function addScore(element, score) {
 }
 
 function resetScore() {
-  document.getElementById('home').classList.remove('winner');
-  document.getElementById('guest').classList.remove('winner');
+  homeEl.classList.remove('winner');
+  guestEl.classList.remove('winner');
+  void homeEl.offsetWidth;
+  void guestEl.offsetWidth;
   lastResultHome.textContent = homeScore;
   lastResultGuest.textContent = guestScore;
   checkWinner();
@@ -29,8 +33,8 @@ function resetScore() {
 
 function checkWinner() {
   if (homeScore > guestScore) {
-    document.getElementById('home').classList.add('winner');
+    homeEl.classList.add('winner');
   } else if (guestScore > homeScore) {
-    document.getElementById('guest').classList.add('winner');
+    guestEl.classList.add('winner');
   }
 }
